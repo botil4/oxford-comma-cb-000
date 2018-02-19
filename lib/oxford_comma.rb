@@ -1,12 +1,12 @@
 def oxford_comma(array)
   case array.length
   when 1
-    array
+    array.first
   when 2
-    array.join("and")
+    array.join(" and ")
   else
     array.pop
-    array.join(",") + "and" + array.last
+    array.join(", ") + "and" + array.last
   end
 
 end
